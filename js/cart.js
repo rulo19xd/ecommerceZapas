@@ -4,6 +4,7 @@ const precioElement = document.getElementById("precio");
 const carritoVacioElement = document.getElementById("carrito-vacio");
 const totalesElement = document.getElementById("totales");
 const reiniciarCarritoElement = document.getElementById("reiniciar");
+const comprarCarritoElement = document.getElementById("comprar");
 
 
 
@@ -74,4 +75,20 @@ function reiniciarCarrito () {
     actualizarTotales();
     crearTarjetasProductosInicio();
     actualizarNumeroCarrito();
+}
+
+comprarCarritoElement.addEventListener("click", comprarCarrito);
+
+function comprarCarrito () {
+    const numeroWhatsApp = '+5492646733553';
+    const productos = JSON.parse(localStorage.getItem("zapas"));
+
+    let mensaje = "Hola, me gustaría comprar los siguientes productos:\n";
+    productos.forEach(producto => {
+        mensaje += `${producto.nombre} - Cantidad: ${producto.cantidad} - Precio: $${producto.precio}\n`;
+    });
+
+    const mensajeEncoded = encodeURIComponent(mensaje);
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeEncoded}`;
+    window.location.href = urlWhatsApp;
 }
