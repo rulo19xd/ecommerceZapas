@@ -20,8 +20,8 @@ function agregarAlCarrito(producto) {
         }
         localStorage.setItem("zapas", JSON.stringify(nuevaMemoria));
     }
-    actualizarNumeroCarrito();
     return cuenta;
+    actualizarNumeroCarrito();
 }
 
 function restarAlCarrito(producto) {

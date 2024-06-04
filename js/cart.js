@@ -41,8 +41,7 @@ function crearTarjetasProductosInicio() {
     }
 }
 
-crearTarjetasProductosInicio();
-actualizarTotales()
+
 
 function actualizarTotales() {
     const productos = JSON.parse(localStorage.getItem("zapas")); 
@@ -92,3 +91,7 @@ function comprarCarrito () {
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeEncoded}`;
     window.location.href = urlWhatsApp;
 }
+
+
+crearTarjetasProductosInicio();
+actualizarTotales();
