@@ -1,0 +1,26 @@
+#productos-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.tarjeta-producto {
+    max-width: 300px;
+    text-align: center;
+    background-color: var(--color-acento-claro);
+    padding: 10px;
+    box-shadow: 0 0 5px rgba('0', 0, 0, 0.1);
+    transition: 200ms;
+}
+
+.tarjeta-producto:hover {
+    translate: 0 -10px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    aspect-ratio: 1.5;
+}
