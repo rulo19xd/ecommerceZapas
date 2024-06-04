@@ -21,3 +21,33 @@
 #totales , #carrito-vacio {
     text-align: center;
 }
+
+
+@media screen and (max-width: 500px) {
+    #productos-container{
+        width: 100vw;
+        margin: auto;
+    }
+    
+    .tarjeta-producto {
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+        align-items: center;
+    }
+    
+    .tarjeta-producto img {
+        height: 80px;
+        aspect-ratio: 1,5;
+        padding-left: 10px;
+    }
+    
+    .tarjeta-producto h3 {
+        width: 120px;
+        padding-left: 10px;
+    }
+    
+    #totales , #carrito-vacio {
+        text-align: center;
+    }
+}

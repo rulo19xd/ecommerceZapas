@@ -1,3 +1,6 @@
+
+
+
 function agregarAlCarrito(producto) {
     const memoria = JSON.parse(localStorage.getItem("zapas"));
     console.log(memoria)
@@ -20,8 +23,8 @@ function agregarAlCarrito(producto) {
         }
         localStorage.setItem("zapas", JSON.stringify(nuevaMemoria));
     }
-    return cuenta;
     actualizarNumeroCarrito();
+    return cuenta;
 }
 
 function restarAlCarrito(producto) {
@@ -58,3 +61,5 @@ function actualizarNumeroCarrito() {
 }
 
 actualizarNumeroCarrito();
+
+

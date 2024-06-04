@@ -15,10 +15,11 @@
     transition: 200ms;
 }
 
-.tarjeta-producto:hover {
+/* .tarjeta-producto:hover {
     translate: 0 -10px;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
 }
+*/
 
 .tarjeta-producto img {
     width: 100%;
@@ -31,6 +32,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 20px;
-        grid-row-gap: 40px;
+        grid-row-gap: 20px;
+        padding: 20px 20px;
         }        
 }
