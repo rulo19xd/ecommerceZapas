@@ -44,6 +44,7 @@ function restarAlCarrito(producto) {
 function getNuevoProductoParaMemoria(producto) {
     const nuevoProducto = producto;
     nuevoProducto.cantidad = 1;
+    actualizarNumeroCarrito();
     return nuevoProducto;
 }
 
